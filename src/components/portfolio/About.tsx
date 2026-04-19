@@ -82,10 +82,8 @@ export const SectionHeader = ({
     viewport={{ once: true }}
     className="flex items-center gap-4"
   >
-    <span className="font-mono text-primary text-lg">{index}.</span>
     <h2 className="font-display text-3xl sm:text-4xl font-bold">
-      <span className="text-foreground">{title}</span>
-      <span className="text-primary">()</span>
+      <span className="text-foreground">{title.charAt(0).toUpperCase() + title.slice(1).replace(/_/g, " ")}</span>
     </h2>
     <div className="flex-1 h-px bg-border max-w-xs" />
   </motion.div>
