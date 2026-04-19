@@ -38,13 +38,13 @@ export const Navbar = () => {
         </a>
 
         <ul className="hidden md:flex items-center gap-1 font-mono text-sm">
-          {links.map((l, i) => (
+          {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
                 className="px-3 py-2 text-muted-foreground hover:text-primary transition-colors"
               >
-                <span className="text-primary/60">0{i + 1}.</span> {l.label}
+                {l.label}
               </a>
             </li>
           ))}
