@@ -4,7 +4,7 @@ export const Footer = () => (
       <p>
         <span className="text-primary">$</span> echo "© {new Date().getFullYear()} Mamdouh Hazem"
       </p>
-      <p>Built with React · Tailwind · Framer Motion</p>
+      
     </div>
   </footer>
 );
