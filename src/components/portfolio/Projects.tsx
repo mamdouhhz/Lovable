@@ -46,11 +46,12 @@ export const Projects = () => {
           {projects.map((p, i) => (
             <motion.article
               key={p.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.07 }}
-              className="group relative p-6 rounded-xl bg-gradient-card border border-border hover:border-primary/50 hover:-translate-y-1 hover:shadow-elevated transition-all"
+              viewport={{ once: true, margin: "0px 0px -10% 0px" }}
+              transition={{ duration: 0.4, delay: Math.min(i, 3) * 0.05, ease: "easeOut" }}
+              style={{ willChange: "transform, opacity" }}
+              className="group relative p-6 rounded-xl bg-gradient-card border border-border hover:border-primary/50 md:hover:-translate-y-1 hover:shadow-elevated transition-colors"
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="p-3 rounded-lg bg-primary/10 text-primary">
