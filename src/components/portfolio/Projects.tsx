@@ -40,6 +40,7 @@ export const Projects = () => {
   return (
     <section id="projects" className="py-24 bg-secondary/20">
       <div className="container">
+        <span className="text-primary">04</span>
         <SectionHeader index="04" title="projects" />
 
         <div className="mt-12 grid md:grid-cols-2 gap-6">

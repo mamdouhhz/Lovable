@@ -60,6 +60,7 @@ export const Experience = () => {
   return (
     <section id="experience" className="py-24">
       <div className="container">
+        <span className="text-primary">03</span>
         <SectionHeader index="03" title="experience" />
 
         <div className="mt-12 relative">

@@ -55,6 +55,7 @@ export const Skills = () => {
   return (
     <section id="skills" className="py-24 bg-secondary/20">
       <div className="container">
+        <span className="text-primary">02</span>
         <SectionHeader index="02" title="skills" />
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">

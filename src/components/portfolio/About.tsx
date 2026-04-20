@@ -12,6 +12,7 @@ export const About = () => {
   return (
     <section id="about" className="py-24">
       <div className="container">
+        <span className="text-primary">01</span>
         <SectionHeader index="01" title="about_me" />
 
         <div className="mt-12 grid lg:grid-cols-3 gap-10">
