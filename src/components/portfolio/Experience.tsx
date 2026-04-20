@@ -96,9 +96,9 @@ export const Experience = () => {
                     {exp.points.map((p, j) => (
                       <li
                         key={j}
-                        className="text-sm text-muted-foreground flex gap-2"
+                        className="text-sm text-muted-foreground flex gap-2 items-baseline"
                       >
-                        <span className="text-primary mt-1">▹</span>
+                        <span className="text-primary leading-none">▹</span>
                         <span>{p}</span>
                       </li>
                     ))}
