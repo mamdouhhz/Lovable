@@ -112,19 +112,19 @@ export const Hero = () => {
               </span>
             </div>
             <pre className="p-6 font-mono text-sm leading-relaxed overflow-x-auto">
-{`name: Mamdouh Hazem
-role: `}<span className="text-primary">DevOps Engineer</span>{`
-location: Cairo, Egypt
-education:
-  degree: `}<span className="text-accent">B.Sc Computer Science</span>{`
-  gpa: 3.67 / Excellent w/ Honors
-stack:
-  cloud:    [AWS, CloudFormation]
+{`Name: Mamdouh Hazem Akram Amin
+Role: `}<span className="text-primary">DevOps Engineer</span>{`
+Location: Cairo, Egypt
+Education:
+  Degree: `}<span className="text-accent">B.Sc Computer Science</span>{`
+  GPA: 3.67 / Excellent with Honors
+Stack:
+  Cloud:    [AWS, CloudFormation]
   containers: [Docker, K8s, OpenShift]
   iac:      [Terraform, Ansible]
-  ci_cd:    [GitHub Actions]
-languages: [Arabic, English, German]
-status: `}<span className="text-primary">available_for_hire</span>{` ✓`}
+  CI/CD:    [GitHub Actions]
+Languages: [Arabic, English, German]
+Status: `}<span className="text-primary">available_for_hire</span>{` ✓`}
             </pre>
           </div>
         </motion.div>
