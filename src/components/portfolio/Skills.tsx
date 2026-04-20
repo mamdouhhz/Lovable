@@ -61,11 +61,12 @@ export const Skills = () => {
           {groups.map((g, i) => (
             <motion.div
               key={g.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.05 }}
-              className="group p-6 rounded-xl bg-gradient-card border border-border hover:border-primary/50 hover:shadow-glow transition-all"
+              viewport={{ once: true, margin: "0px 0px -10% 0px" }}
+              transition={{ duration: 0.35, delay: Math.min(i, 3) * 0.04, ease: "easeOut" }}
+              style={{ willChange: "transform, opacity" }}
+              className="group p-6 rounded-xl bg-gradient-card border border-border hover:border-primary/50 hover:shadow-glow transition-colors"
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-md bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
