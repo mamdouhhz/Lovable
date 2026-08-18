@@ -12,7 +12,7 @@ import { SectionHeader } from "./About";
 const groups = [
   {
     icon: Cloud,
-    title: "DevOps & Cloud",
+    title: "DevOps & Cloudd",
     items: [
       "AWS",
       "Bash Scripting",
