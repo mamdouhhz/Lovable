@@ -55,7 +55,7 @@ export const Contact = () => {
           <a href="https://linkedin.com/in/mamdouh-hazem" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <Linkedin className="h-6 w-6" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="https://github.com/mamdouhhz" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <Github className="h-6 w-6" />
           </a>
         </div>

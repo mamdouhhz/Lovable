@@ -20,8 +20,8 @@ const groups = [
       "Terraform",
       "Ansible",
       "Playbooks & Roles",
-      "Ansible Vault",
-      "Dynamic AWS Inventory",
+      "Inventory",
+      "Vault-encrypted secrets",
     ],
   },
   {

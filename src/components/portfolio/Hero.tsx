@@ -26,7 +26,7 @@ export const Hero = () => {
             className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05]"
           >
             Mamdouh <br />
-            <span className="text-gradient">Hazem Akram</span>
+            <span className="text-gradient">Hazem Akram Amin</span>
           </motion.h1>
 
           <motion.p
