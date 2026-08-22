@@ -4,35 +4,64 @@ import { SectionHeader } from "./About";
 
 const projects = [
   {
-    title: "Dentify-X",
-    subtitle: "Graduation Project · Grade A+",
+    title: "AWS EKS DevOps Platform",
+    subtitle: "NTI Final Project",
     description:
-      "AI model for X-ray abnormality detection using YOLOv8 — achieved 96% accuracy on real-world samples. Full pipeline: preprocessing, augmentation, labeling, training, and validation, served by a Go backend.",
-    tags: ["YOLOv8", "Go", "Gorm", "PostgreSQL", "Postman", "JUnit"],
+      "Provisioned production AWS infrastructure with Terraform (VPC, auto-scaling EKS, RDS, ECR, Jenkins EC2, Secrets Manager, CloudWatch, Backup) configured via Ansible. Containerized the app with Docker and deployed to EKS via Helm with Ingress, NetworkPolicies, and secure RDS connectivity. Built a multi-branch Jenkins pipeline with SonarQube quality gates, Trivy scanning, and automated pushes to ECR — plus Prometheus, Grafana, and Loki for centralized logging, dashboards, and alerting.",
+    tags: [
+      "Terraform",
+      "Jenkins",
+      "Ansible",
+      "Docker",
+      "Kubernetes",
+      "Helm",
+      "AWS",
+      "Prometheus",
+      "Grafana",
+      "Loki",
+      "SonarQube",
+      "Trivy",
+    ],
+    github: "https://github.com/mamdouhhz/nti-final-project",
     featured: true,
+  },
+  {
+    title: "Kubernetes Secure Three-Tier App",
+    subtitle: "Kubernetes Security & Scheduling",
+    description:
+      "Deployed a secure three-tier application (frontend, backend, MySQL) on Kubernetes using Deployments, a StatefulSet, and Ingress. Configured RBAC, Secrets, and Network Policies to secure cluster access, credentials, and pod-to-pod traffic. Implemented node taints, tolerations, node affinity, and PV/PVC storage, built and published a custom backend image, and validated external access and database persistence.",
+    tags: ["Kubernetes", "RBAC", "Docker", "MySQL", "Ingress", "NetworkPolicies"],
+    github: "https://github.com/mamdouhhz/kubernetes-three-tier-app",
+  },
+  {
+    title: "AWS Three-Tier IaC with Terraform",
+    subtitle: "Infrastructure as Code",
+    description:
+      "Modular AWS infrastructure built with Terraform following IaC principles — a custom VPC with public and private subnets across multiple Availability Zones, Internet Gateway, route tables, and security groups. EC2 instances behind Application Load Balancers for a highly available three-tier architecture, with remote Terraform state in Amazon S3 and state locking.",
+    tags: ["Terraform", "AWS", "VPC", "ALB", "EC2", "S3"],
+    github: "https://github.com/mamdouhhz/aws-terraform",
+  },
+  {
+    title: "OpenShift WordPress Platform",
+    subtitle: "Production-Style Deployment",
+    description:
+      "Deployed a production-style WordPress/MySQL application on OpenShift using PVCs, ConfigMaps, and Secrets for storage and configuration. Exposed via Services and Routes with health probes, horizontal pod autoscaling, and resource limits — validated under load.",
+    tags: ["OpenShift", "PVCs", "HPA", "ConfigMaps", "Secrets", "MySQL"],
   },
   {
     title: "Nosor Medical Center",
     subtitle: "Production Website",
     description:
-      "Designed, developed, and deployed the official website for the Egyptian Air Forces medical center. Live in production.",
-    tags: ["Linux", "Bash", "SSH", "Web"],
+      "Designed, developed, and deployed the official website for the Egyptian Air Forces medical center on a Linux server. Live in production.",
+    tags: ["Linux", "Bash", "nginx", "SSH"],
     link: "https://nosor-medicalcenter.org/",
-    featured: true,
   },
   {
-    title: "Attendance System",
+    title: "Attendance System & Fire Alarm Dashboards",
     subtitle: "IOTBLUE Internship",
     description:
-      "REST API for an employee attendance system built with Go, Gin, Gorm, and PostgreSQL. Fully tested with Postman.",
-    tags: ["Go", "Gin", "Gorm", "PostgreSQL"],
-  },
-  {
-    title: "Fire Alarm Dashboards",
-    subtitle: "IOTBLUE Internship",
-    description:
-      "Real-time dashboards for an industrial fire alarm system, surfacing sensor health and alert states for operators.",
-    tags: ["Backend", "Dashboards", "IoT"],
+      "REST API for an employee attendance system built with Go, Gin, and Gorm on PostgreSQL, tested with Postman. Also built real-time dashboards for a fire alarm monitoring system, consuming live sensor data over MQTT from an existing broker.",
+    tags: ["Go", "Gin", "Gorm", "PostgreSQL", "MQTT", "Postman"],
   },
 ];
 
@@ -40,7 +69,6 @@ export const Projects = () => {
   return (
     <section id="projects" className="py-24 bg-secondary/20">
       <div className="container">
-        <span className="text-primary">04</span>
         <SectionHeader index="04" title="projects" />
 
         <div className="mt-12 grid md:grid-cols-2 gap-6">
@@ -65,18 +93,22 @@ export const Projects = () => {
                       target="_blank"
                       rel="noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
-                      aria-label="External link"
+                      aria-label={`${p.title} live site`}
                     >
                       <ExternalLink className="h-4 w-4" />
                     </a>
                   )}
-                  <a
-                    href="#"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    aria-label="GitHub"
-                  >
-                    <Github className="h-4 w-4" />
-                  </a>
+                  {p.github && (
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      aria-label={`${p.title} on GitHub`}
+                    >
+                      <Github className="h-4 w-4" />
+                    </a>
+                  )}
                 </div>
               </div>
 
