@@ -35,11 +35,12 @@ export const Hero = () => {
             transition={{ delay: 0.2 }}
             className="mt-6 text-xl text-muted-foreground max-w-2xl"
           >
-            Cloud DevOps Engineer designing, automating, and deploying cloud
-            infrastructure with <span className="text-foreground">AWS</span>,{" "}
+            Cloud DevOps Engineer with hands-on experience in designing, automating, deploying
+            and maintaining cloud infrastructure using <span className="text-foreground">AWS</span>,{" "}
             <span className="text-foreground">Terraform</span>,{" "}
             <span className="text-foreground">Kubernetes</span>,{" "}
-            <span className="text-foreground">Docker</span>, and{" "}
+            <span className="text-foreground">OpenShift</span>,{" "}
+            <span className="text-foreground">Docker</span>,{" "}
             <span className="text-foreground">Jenkins</span>.
           </motion.p>
 
@@ -115,7 +116,7 @@ export const Hero = () => {
               </span>
             </div>
             <pre className="p-6 font-mono text-sm leading-relaxed overflow-x-auto">
-{`Name: Mamdouh Hazem Akram Amin
+              {`Name: Mamdouh Hazem Akram Amin
 Role: `}<span className="text-primary">Cloud DevOps Engineer</span>{`
 Location: Heliopolis, Cairo, Egypt
 Education:
