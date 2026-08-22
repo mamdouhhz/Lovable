@@ -41,7 +41,7 @@ export const Hero = () => {
             <span className="text-foreground">Kubernetes</span>,{" "}
             <span className="text-foreground">OpenShift</span>,{" "}
             <span className="text-foreground">Docker</span>,{" "}
-            <span className="text-foreground">Jenkins</span>. and more...!
+            <span className="text-foreground">Jenkins</span>, and more...!
           </motion.p>
 
           <motion.div
