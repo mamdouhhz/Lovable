@@ -4,35 +4,63 @@ import {
   Container,
   Code2,
   Database,
-  TestTube2,
-  Network,
+  GitBranch,
+  Activity,
+  Terminal,
+  Languages,
 } from "lucide-react";
 import { SectionHeader } from "./About";
 
 const groups = [
   {
     icon: Cloud,
-    title: "DevOps & Cloudd",
+    title: "Cloud & Infrastructure as Code",
     items: [
       "AWS",
-      "Bash Scripting",
-      "Ansible",
       "Terraform",
-      "CloudFormation",
-      "GitHub Actions",
-      "Linux",
-      "Git",
+      "Ansible",
+      "Playbooks & Roles",
+      "Ansible Vault",
+      "Dynamic AWS Inventory",
     ],
   },
   {
     icon: Container,
     title: "Containers & Orchestration",
-    items: ["Docker", "Podman", "Kubernetes", "OpenShift"],
+    items: ["Docker", "Podman", "Kubernetes", "Helm", "OpenShift"],
+  },
+  {
+    icon: GitBranch,
+    title: "CI/CD & Version Control",
+    items: [
+      "Jenkins",
+      "Declarative Pipelines",
+      "Shared Libraries",
+      "GitHub Actions",
+      "ArgoCD / GitOps",
+      "Git",
+      "GitHub",
+    ],
+  },
+  {
+    icon: Activity,
+    title: "Monitoring, Security & Quality",
+    items: ["Prometheus", "Grafana", "Loki", "SonarQube", "Trivy"],
+  },
+  {
+    icon: Terminal,
+    title: "OS, Scripting & Networking",
+    items: [
+      "Linux Administration",
+      "Bash Scripting",
+      "nginx",
+      "CCNA Fundamentals",
+    ],
   },
   {
     icon: Code2,
     title: "Programming",
-    items: ["Go (Golang)", "Python", "Java", "C++", "NumPy", "Pandas", "REST APIs"],
+    items: ["Go (Golang)", "Java", "Python", "C++", "RESTful APIs"],
   },
   {
     icon: Database,
@@ -40,14 +68,9 @@ const groups = [
     items: ["PostgreSQL", "MySQL", "SQL", "Gorm"],
   },
   {
-    icon: TestTube2,
-    title: "Testing",
-    items: ["JUnit", "Postman", "Manual Testing", "Test Validation"],
-  },
-  {
-    icon: Network,
-    title: "Networking",
-    items: ["CCNA", "TCP/IP", "Routing & Switching"],
+    icon: Languages,
+    title: "Languages",
+    items: ["Arabic (native)", "English (fluent)", "German (A2)"],
   },
 ];
 
@@ -55,7 +78,6 @@ export const Skills = () => {
   return (
     <section id="skills" className="py-24 bg-secondary/20">
       <div className="container">
-        <span className="text-primary">02</span>
         <SectionHeader index="02" title="skills" />
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
