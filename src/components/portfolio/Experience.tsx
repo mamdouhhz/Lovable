@@ -4,55 +4,58 @@ import { SectionHeader } from "./About";
 
 const experiences = [
   {
-    role: "DevOps Trainee — Hire Ready Initiative",
-    company: "National Telecommunication Institute (NTI)",
-    period: "Apr 2026 – Jul 2026",
+    role: "DevOps Engineer Intern",
+    company: "iVolve Technologies LTD",
+    period: "Jul 2026",
     points: [
-      "Intensive 288+ hour DevOps program covering Linux, CI/CD, IaC, containers, and cloud.",
-      "Hands-on with Red Hat Enterprise Linux, Ansible, Docker/Podman, Kubernetes/OpenShift.",
-      "Designed cloud solutions on AWS — serverless, CI/CD pipelines, IaC with Terraform & CloudFormation.",
+      "Containerized Java and Python applications with multi-stage Dockerfiles — image size optimization, environment variable management, volumes/bind mounts, and custom networks.",
+      "Deployed workloads on Kubernetes using Deployments, StatefulSets, DaemonSets, PV/PVCs, ConfigMaps/Secrets, init containers, resource quotas, taints/tolerations, NetworkPolicies, and RBAC (Roles, RoleBindings, ServiceAccounts).",
+      "Implemented CI/CD pipelines in Jenkins (declarative pipelines, shared libraries, distributed agents) automating testing, image builds, and Kubernetes deployments.",
+      "Extended delivery with GitOps via ArgoCD and automated Linux/infrastructure configuration using Ansible (playbooks, roles, Vault-encrypted secrets, dynamic AWS inventory).",
+    ],
+  },
+  {
+    role: "Cloud DevOps Engineer",
+    company: "National Telecommunication Institute — HireReady Scholarship",
+    period: "Apr 2026 – Jun 2026",
+    points: [
+      "Completed an intensive DevOps program covering Linux Administration, OpenShift, Jenkins, GitHub Actions CI/CD, Terraform, Docker, Podman, and AWS.",
+      "Built and deployed serverless applications, CI/CD pipelines, and infrastructure-as-code solutions on AWS.",
     ],
   },
   {
     role: "Teaching Assistant",
-    company: "AASTMT — Arab Academy",
+    company: "The Arab Academy for Science & Technology — AASTMT",
     period: "Sep 2025 – Feb 2026",
     points: [
       "Taught Introduction to Computers (CS111) and C programming.",
-      "Coordinated lab sessions, prepared materials, graded quizzes and exams.",
+      "Coordinated lab sessions, prepared materials and exams, and graded quizzes, assignments, and reports.",
     ],
   },
   {
-    role: "IT Specialist (Military Service)",
-    company: "Egyptian Air Forces",
+    role: "IT Specialist",
+    company: "Military Service — Egyptian Air Forces",
     period: "Jan 2025 – Feb 2026",
     points: [
       "Diagnosed and resolved network infrastructure issues, minimizing downtime.",
-      "Deployed & configured internal systems on Linux servers, automated via Bash & SSH.",
-      "Built and deployed the official medical center website (nosor-medicalcenter.org).",
+      "Deployed and configured an internal system on a Linux server with automated startup.",
+      "Developed and deployed the official website for the medical center.",
     ],
   },
   {
     role: "Java Software Engineer Intern",
-    company: "Orange Egypt",
+    company: "Orange Innovation Egypt",
     period: "Aug 2024 – Oct 2024",
-    points: ["Contributed to Java-based development tasks across enterprise services."],
+    points: ["Contributed to Java-based development tasks."],
   },
   {
     role: "Backend Engineer Intern",
     company: "IOTBLUE",
     period: "Aug 2023 – Oct 2023",
     points: [
-      "Built dashboards for a fire alarm system.",
-      "Developed an attendance system with Go, Gorm, Gin, and PostgreSQL.",
-      "API testing with Postman.",
+      "Developed an attendance system using Golang, Gorm, and Gin with PostgreSQL; tested APIs using Postman.",
+      "Built dashboards for a fire alarm monitoring system, consuming real-time sensor data over MQTT from an existing broker.",
     ],
-  },
-  {
-    role: "Software Quality Engineer Intern",
-    company: "Digital Blocks",
-    period: "Aug 2022 – Sep 2022",
-    points: ["Tested web applications, authored test cases and bug reports."],
   },
 ];
 
@@ -60,7 +63,6 @@ export const Experience = () => {
   return (
     <section id="experience" className="py-24">
       <div className="container">
-        <span className="text-primary">03</span>
         <SectionHeader index="03" title="experience" />
 
         <div className="mt-12 relative">
