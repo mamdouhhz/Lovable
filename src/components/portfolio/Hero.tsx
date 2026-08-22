@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Mail, Github, Linkedin } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -35,9 +35,12 @@ export const Hero = () => {
             transition={{ delay: 0.2 }}
             className="mt-6 text-xl text-muted-foreground max-w-2xl"
           >
-            DevOps Engineer building <span className="text-foreground">scalable</span>,{" "}
-            <span className="text-foreground">automated</span> infrastructure with AWS,
-            Kubernetes, Docker, and Terraform.
+            Cloud DevOps Engineer designing, automating, and deploying cloud
+            infrastructure with <span className="text-foreground">AWS</span>,{" "}
+            <span className="text-foreground">Terraform</span>,{" "}
+            <span className="text-foreground">Kubernetes</span>,{" "}
+            <span className="text-foreground">Docker</span>, and{" "}
+            <span className="text-foreground">Jenkins</span>.
           </motion.p>
 
           <motion.div
@@ -57,7 +60,7 @@ export const Hero = () => {
               href="#contact"
               className="inline-flex items-center gap-2 px-6 py-3 border border-border bg-card hover:border-primary hover:text-primary text-foreground font-medium rounded-md transition-colors"
             >
-              <Download className="h-4 w-4" />
+              <Mail className="h-4 w-4" />
               Get in Touch
             </a>
           </motion.div>
@@ -78,7 +81,7 @@ export const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/mamdouhhz"
               target="_blank"
               rel="noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -113,17 +116,19 @@ export const Hero = () => {
             </div>
             <pre className="p-6 font-mono text-sm leading-relaxed overflow-x-auto">
 {`Name: Mamdouh Hazem Akram Amin
-Role: `}<span className="text-primary">DevOps Engineer</span>{`
-Location: Cairo, Egypt
+Role: `}<span className="text-primary">Cloud DevOps Engineer</span>{`
+Location: Heliopolis, Cairo, Egypt
 Education:
   Degree: `}<span className="text-accent">B.Sc Computer Science</span>{`
   GPA: 3.67 / Excellent with Honors
 Stack:
-  Cloud:    [AWS, CloudFormation]
-  containers: [Docker, K8s, OpenShift]
-  iac:      [Terraform, Ansible]
-  CI/CD:    [GitHub Actions]
+  cloud:      [AWS]
+  iac:        [Terraform, Ansible]
+  containers: [Docker, K8s, Helm, OpenShift]
+  ci_cd:      [Jenkins, GitHub Actions, ArgoCD]
+  observability: [Prometheus, Grafana, Loki]
 Languages: [Arabic, English, German]
+Military: `}<span className="text-accent">completed</span>{`
 Status: `}<span className="text-primary">available_for_hire</span>{` ✓`}
             </pre>
           </div>
